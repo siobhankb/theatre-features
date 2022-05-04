@@ -1,0 +1,83 @@
+.container {  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 1.1fr 0.6fr;
+  grid-template-rows: 0.3fr 1.7fr 0.9fr 1.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    ". main_content main_content ."
+    ". main_content main_content ."
+    "footer footer footer footer";
+}
+
+.main_content {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.1fr 1.1fr 1.1fr 1.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "img1 descr1 tix1"
+    "img2 descr2 tix2"
+    "img3 descr3 tix3"
+    "img4 descr4 tix4";
+  grid-area: main_content;
+}
+
+.img1 { grid-area: img1; }
+
+.descr1 { grid-area: descr1; }
+
+.tix1 { grid-area: tix1; }
+
+.img2 { grid-area: img2; }
+
+.descr2 { grid-area: descr2; }
+
+.tix2 { grid-area: tix2; }
+
+.img3 { grid-area: img3; }
+
+.descr3 { grid-area: descr3; }
+
+.tix3 { grid-area: tix3; }
+
+.img4 { grid-area: img4; }
+
+.descr4 { grid-area: descr4; }
+
+.tix4 { grid-area: tix4; }
+
+.footer {  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.9fr 0.9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". info shows social"
+    "map info shows social"
+    ". info shows social";
+  grid-area: footer;
+}
+
+.map { grid-area: map; }
+
+.info { grid-area: info; }
+
+.shows { grid-area: shows; }
+
+.social { grid-area: social; }
+
+.navbar {  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "griot navlinks";
+  grid-area: navbar;
+}
+
+.griot { grid-area: griot; }
+
+.navlinks { grid-area: navlinks; }
