@@ -9,31 +9,34 @@
 </head>
 <body class="bg-light">
 <!-- whole page container -->
-  <div class="container">
+  <div class="container bg-white">
   <!-- navbar -->
     <!-- left section w large text for theater name -->
-    <!-- right section w smaller links, but justified top-ish, left-ish -->
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <div class="col-lg-5 col-md-7 col-sm-10 p-md-3 p-lg-5">
+            <a class="navbar-brand fs-1 fw-bold" href="#">Griot Theater</a>
+          </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+          <!-- right section w smaller links, but justified top-ish, left-ish -->
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link active fs-5" href="#">Home</a>
+              <a class="nav-link active fs-5" href="#">Features</a>
+              <a class="nav-link active fs-5" href="#">Our Actors</a>
+              <a class="nav-link active fs-5" href="#">Mission</a>
+              <a class="nav-link active fs-5" href="#">Contact</a>
+              </div>
             </div>
-          </div>
         </div>
       </nav>
     </div>
   <!-- main image "Featured Shows" text overlay -->
-    <div class="row">
-      <div class="card">
+    <div class="row p-0">
+      <div class="card bg-transparent p-0 m-0">
         <img src="/images/theater-image-background.png" class="card-img" alt="featured shows">
           <div class="card-img-overlay">
             <h5 class="card-title">Featured Shows</h5>
@@ -42,23 +45,194 @@
     </div>
   <!-- Main Section -->
     <!-- April 2020  header bar -->
-    <div class="row">
-      <div class="card">
+    <div class="row my-3 gx-0 justify-content-center">
+      <div class="col-lg-10 col-md-12">
+      <div class="card border-dark">
         <div class="card-body">
-          <h5 class="card-title">April 2020</h5>
+          <h5 class="card-title fs-1">April 2020</h5>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- 4 X boxes/sections/cards with 
+      *photo
+      *Title, subtitle(date), address, ticket price
+      *'Read More' button link -->
+      <!-- first box/section/card with 3 colums -->
+      <div class="container pt-3">
+        <div class="row mt-3 mb-2 gx-0 justify-content-center">
+          <div class="col-lg-10 col-md-12">
+          <!-- card with 3 columns -->
+            <div class="card bg-transparent border-0">
+              <div class="row align-items-center">
+                <!-- column for image -->
+                <div class="col-4 px-0">
+                  <img src="/images/a-raisin-in-the-sun-theater-1.png" class="img-fluid rounded" alt="A Raisin in the Sun">
+                </div>
+                <!-- column for show info -->
+                <div class="col-5">
+                  <div class="card-body">
+                    <h5 class="card-title fs-2">A Raisin in the Sun</h5>
+                    <h6 class="card-subtitle mb-2 fs-4 my-2">April 6, 2020 - March 12, 2021</h6>
+                    <p class="card-text my-3">Griot Theater, 233 State St., Chicago, IL</p>
+                    <p class="card-text">$75</p>
+                  </div>
+                </div>
+                <!-- column for button -->
+                <div class="col-3">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-lg text-white">Read More</button>            
+                    <!-- <button type="button" class="btn btn-warning">Read More</button> -->
+                    </div>
+              </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-        <!-- 4 X boxes/sections/cards with 
-                *photo
-                *Title, subtitle(date), address, ticket price
-                *'Read More' button link -->
-
+    <hr>
+    <!-- second box/section/card with 3 colums -->
+      <div class="container overflow-hidden pt-3">
+        <div class="row mt-3 mb-2 gx-0 justify-content-center">
+          <div class="col-lg-10 col-md-12">
+          <!-- card with 3 columns -->
+            <div class="card bg-transparent border-0">
+              <div class="row align-items-center">
+                <!-- column for image -->
+                <div class="col-4 px-0">
+                  <img src="/images/a-raisin-in-the-sun-theater-1.png" class="img-fluid rounded" alt="A Raisin in the Sun">
+                </div>
+                <!-- column for show info -->
+                <div class="col-5">
+                  <div class="card-body">
+                    <h5 class="card-title fs-2">A Raisin in the Sun</h5>
+                    <h6 class="card-subtitle mb-2 fs-4 my-2">April 6, 2020 - March 12, 2021</h6>
+                    <p class="card-text my-3">Griot Theater, 233 State St., Chicago, IL</p>
+                    <p class="card-text">$75</p>
+                  </div>
+                </div>
+                <!-- column for button -->
+                <div class="col-3">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-lg text-white fs-5">Read More</button>            
+                    <!-- <button type="button" class="btn btn-warning">Read More</button> -->
+                    </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- third box/section/card with 3 colums -->
+      <div class="container overflow-hidden pt-3">
+        <div class="row mt-3 mb-2 gx-0 justify-content-center">
+          <div class="col-lg-10 col-md-12">
+          <!-- card with 3 columns -->
+            <div class="card bg-transparent border-0">
+              <div class="row align-items-center">
+                <!-- column for image -->
+                <div class="col-4 px-0">
+                  <img src="/images/a-raisin-in-the-sun-theater-1.png" class="img-fluid rounded" alt="A Raisin in the Sun">
+                </div>
+                <!-- column for show info -->
+                <div class="col-5">
+                  <div class="card-body">
+                    <h5 class="card-title fs-2">A Raisin in the Sun</h5>
+                    <h6 class="card-subtitle mb-2 fs-4 my-2">April 6, 2020 - March 12, 2021</h6>
+                    <p class="card-text my-3">Griot Theater, 233 State St., Chicago, IL</p>
+                    <p class="card-text">$75</p>
+                  </div>
+                </div>
+                <!-- column for button -->
+                <div class="col-3">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-lg text-white fs-5">Read More</button>            
+                    <!-- <button type="button" class="btn btn-warning">Read More</button> -->
+                    </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- fourth box/section/card with 3 colums -->
+      <div class="container overflow-hidden pt-3">
+        <div class="row mt-3 mb-2 pt-3 gx-0 justify-content-center">
+          <div class="col-lg-10 col-md-12">
+          <!-- card with 3 columns -->
+            <div class="card bg-transparent border-0">
+              <div class="row align-items-center">
+                <!-- column for image -->
+                <div class="col-4 px-0">
+                  <img src="/images/a-raisin-in-the-sun-theater-1.png" class="img-fluid rounded" alt="A Raisin in the Sun">
+                </div>
+                <!-- column for show info -->
+                <div class="col-5">
+                  <div class="card-body">
+                    <h5 class="card-title fs-2">A Raisin in the Sun</h5>
+                    <h6 class="card-subtitle mb-2 fs-4 my-2">April 6, 2020 - March 12, 2021</h6>
+                    <p class="card-text my-3">Griot Theater, 233 State St., Chicago, IL</p>
+                    <p class="card-text">$75</p>
+                  </div>
+                </div>
+                <!-- column for button -->
+                <div class="col-3">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-lg text-white fs-5">Read More</button>            
+                    <!-- <button type="button" class="btn btn-warning">Read More</button> -->
+                    </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+</div>
     <!-- footer -->
+<div class="container bg-dark">
+  <div class="row col-lg-10 col-md-12">
+      <div class="card-group bg-dark">
+        <div class="card bg-dark">
+          <!-- map -->
+
+            <div class="row p-5 justify-content-end">
+              <div class="col-4">
+              <img src="/images/" alt="map of Griot Theater neighborhood">
+          </div>
+          <div class="card-footer">
+            <small class="text-dark"></small>
+          </div>
+        </div>
+        </div>
+        <div class="card">
+          <!-- Info -->
+          <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>  
+    </div>
       <!-- map -->
       <!-- info-shows-social boxes -->
-
-
+</div>
   </div>
 </body>
 </html>
